@@ -16,11 +16,13 @@ interface Project {
   description: string
   links: ProjectLinks
   accent: string
+  visible: boolean
 }
 
 export function FeaturedProjects() {
   const { t } = useTranslation('common')
-  const projects = t('featuredProjects.projects', { returnObjects: true }) as Project[]
+  const allProjects = t('featuredProjects.projects', { returnObjects: true }) as Project[]
+  const projects = allProjects.filter((p) => p.visible)
 
   return (
     <section className="py-20">
