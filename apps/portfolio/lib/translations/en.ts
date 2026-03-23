@@ -5,6 +5,7 @@ const en = {
     experience: 'Experience',
     projects: 'Projects',
     blog: 'Blog',
+    augmented: 'Augmented',
     hire: 'Hire Me',
   },
   hero: {
@@ -92,6 +93,96 @@ const en = {
   cv: {
     downloadEN: 'Download CV (EN)',
     downloadDE: 'Lebenslauf (DE)',
+  },
+  about: {
+    pageLabel: '// ABOUT',
+    title: 'Konrad Abe',
+    subtitle: 'Senior Front-End Architect · Berlin',
+    intro: 'I\'ve spent twenty years building things on the web — and the work has always been secondary to a simpler question: who gets to use what we build, and on what terms?',
+    sections: [
+      {
+        label: '// THE NAME',
+        title: 'Why All Bits Equal',
+        body: [
+          'In computing, a bit is the smallest unit of information. It carries no inherent meaning on its own — only what the system assigns to it. And every bit is identical. Equal. What they become depends entirely on context, combination, and the people who decide how to read them.',
+          'That felt like an honest analogy for people too. Not an idealistic one — an accurate one. The value of a person doesn\'t come from their gender, origin, religion, or who they love. It comes from what they build, how they show up, and what they contribute to the systems around them.',
+          'All Bits Equal isn\'t a slogan. It\'s a premise I try to hold consistently — in the products I build, the teams I work with, and the spaces I want to see more of.',
+        ],
+      },
+      {
+        label: '// GAMES & PEOPLE',
+        title: 'Why games, specifically',
+        body: [
+          'Games are one of the few spaces where the usual barriers genuinely don\'t have to apply. You\'re defined by what you do inside the game — not by where you come from, what your body looks like, or what language you grew up speaking. Someone on the other side of the world, navigating a body that limits what they can do physically, playing in a different alphabet — they can sit at the same table, fight the same fight, build the same world.',
+          'That\'s not a small thing. That\'s the kind of levelling that should exist more broadly, and rarely does. I find it worth building toward.',
+        ],
+      },
+      {
+        label: '// IN PRACTICE',
+        title: 'What this looks like in the work',
+        body: [
+          'Professionally, it shapes how I think about accessibility, internationalisation, and the assumptions baked into user experience decisions. Inclusive by default, not by afterthought.',
+          'Personally, it\'s just the world I\'d like to live in — one where people can come together, enjoy things together, and build something worth having. Together. That\'s what I\'m working toward, in whatever way I can.',
+        ],
+      },
+    ],
+  },
+  augmented: {
+    pageLabel: '// AI-AUGMENTED WORKFLOW',
+    title: 'Senior craft, multiplied.',
+    intro: 'AI doesn\'t make you a better developer. Working with AI well does. There\'s a difference — and it shows up in the quality of questions you ask, the judgment you apply to the answers, and the decisions you make about when to lean on it and when not to. This is how I use it.',
+    sections: [
+      {
+        id: '01',
+        label: '// INTERNAL TOOLING',
+        title: 'The tools behind the tools',
+        accent: 'amber' as const,
+        insight: 'AI made the cost of doing it right low enough to justify — which changed how I work, not just how fast.',
+        body: [
+          'ScrapWars runs on hundreds of interconnected items, materials, crafting recipes, and economic relationships. Managing that data manually — in spreadsheets or raw JSON — would burn hours that should go to building. So I built a tool instead.',
+          'Scrap Shop is an internal dev website, built with AI assistance: a purpose-built interface for creating, visualising, editing, and managing game data. Items, material tiers, production chains, crafting trees — all editable in a UI designed around the actual data model, not around generic CRUD patterns.',
+          'Without AI, I wouldn\'t have built this at this stage of a solo side project. The tooling would have waited. AI lowered the cost of doing it properly — and that shifted the quality of everything downstream.',
+        ],
+      },
+      {
+        id: '02',
+        label: '// RESEARCH & DOMAIN EXPANSION',
+        title: 'Senior judgment, expanded map',
+        accent: 'teal' as const,
+        insight: 'AI expands the map. Judgment is still the navigator.',
+        body: [
+          'Game balancing is a discipline in its own right. So is economic simulation, material tier design, and the psychology of player progression. These aren\'t my core domain — but they all need to be applied carefully in something as interconnected as a 4X economy.',
+          'AI gives me rapid access to the established thinking in those fields: documented approaches, known failure modes, design patterns from shipped titles. I don\'t treat this as a substitute for expertise. I treat it as a way to compress the knowledge acquisition phase — reaching the point where I can evaluate intelligently, faster.',
+          'The senior skill here isn\'t knowing everything. It\'s knowing how to interrogate what you find, recognise when a pattern doesn\'t apply to your context, and make the call. The map gets bigger. The navigation doesn\'t get outsourced.',
+        ],
+      },
+      {
+        id: '03',
+        label: '// PROTOTYPE FIDELITY',
+        title: 'Real data, real feedback, no delays',
+        accent: 'purple' as const,
+        insight: 'Placeholder content that\'s representative enough surfaces real problems early — before investment goes in the wrong direction.',
+        body: [
+          'Prototypes built on obviously fake data give obviously fake feedback. A UI full of placeholder item names and off-range stats doesn\'t tell you whether the layout works, whether the information hierarchy makes sense, or whether the data model holds up under realistic load.',
+          'I use AI to generate placeholder content that\'s close enough to real: item names and descriptions that match the tone, stat values in the right range, production chains that are structurally plausible. The content will be replaced — that\'s the point — but it\'s representative enough to surface real design problems early.',
+          'The same principle applies to layout work with AI-generated placeholder images. They\'re not shipped. They\'re scaffolding. The difference matters, and knowing it matters is the point.',
+        ],
+      },
+      {
+        id: '04',
+        label: '// RAPID IDEATION',
+        title: 'The discipline of fast',
+        accent: 'amber' as const,
+        insight: 'Not moving faster toward the first idea — reaching better ideas before the clock runs out.',
+        body: [
+          'Not every idea deserves production-quality code. Some things need to be tried before they earn investment — and the ability to spin up a rough implementation, evaluate it honestly, and either discard it or promote it, is an architectural skill in itself.',
+          'AI makes the exploration phase faster without making the decision phase less rigorous. A new system mechanic, a UI interaction pattern, a data flow — I can sketch it in a fraction of the time, which means I explore more options before committing. The throwaway code stays throwaway. The decisions are better for it.',
+          'This is what AI-augmented velocity actually looks like at senior level: not moving faster toward the first idea, but reaching better ideas before the clock runs out.',
+        ],
+      },
+    ],
+    closing: 'The common thread across all of this isn\'t the tools — it\'s the judgment about when and how to use them. That\'s the skill that transfers.',
+    closingLabel: '// THE TAKEAWAY',
   },
   projectsPage: {
     pageLabel: '// PROJECTS',

@@ -5,6 +5,7 @@ const de = {
     experience: 'Erfahrung',
     projects: 'Projekte',
     blog: 'Blog',
+    augmented: 'Augmented',
     hire: 'Kontakt',
   },
   hero: {
@@ -92,6 +93,96 @@ const de = {
   cv: {
     downloadEN: 'CV (EN)',
     downloadDE: 'Lebenslauf (DE)',
+  },
+  about: {
+    pageLabel: '// ÜBER MICH',
+    title: 'Konrad Abe',
+    subtitle: 'Senior Front-End Architekt · Berlin',
+    intro: 'Ich baue seit zwanzig Jahren Dinge im Web — und die Arbeit war immer zweitrangig gegenüber einer einfacheren Frage: Wer darf das nutzen, was wir bauen, und zu welchen Bedingungen?',
+    sections: [
+      {
+        label: '// DER NAME',
+        title: 'Warum All Bits Equal',
+        body: [
+          'In der Informatik ist ein Bit die kleinste Informationseinheit. Allein trägt es keine inhärente Bedeutung — nur das, was das System ihm zuweist. Und jedes Bit ist identisch. Gleich. Was sie werden, hängt vollständig von Kontext, Kombination und den Menschen ab, die entscheiden, wie sie gelesen werden.',
+          'Das schien mir eine ehrliche Analogie für Menschen zu sein. Keine idealistische — eine zutreffende. Der Wert eines Menschen ergibt sich nicht aus seinem Geschlecht, seiner Herkunft, seiner Religion oder dem, wen er liebt. Er ergibt sich daraus, was er baut, wie er sich einbringt, und was er zu den Systemen um ihn herum beiträgt.',
+          'All Bits Equal ist kein Slogan. Es ist eine Prämisse, die ich konsequent zu halten versuche — in den Produkten, die ich baue, den Teams, mit denen ich arbeite, und den Räumen, von denen ich mir mehr wünsche.',
+        ],
+      },
+      {
+        label: '// SPIELE & MENSCHEN',
+        title: 'Warum Spiele, konkret',
+        body: [
+          'Spiele sind einer der wenigen Räume, in denen die üblichen Barrieren wirklich nicht gelten müssen. Man wird dadurch definiert, was man im Spiel tut — nicht dadurch, woher man kommt, wie der eigene Körper aussieht oder welche Sprache man aufgewachsen ist. Jemand auf der anderen Seite der Welt, der einen Körper navigiert, der ihn physisch einschränkt, der in einem anderen Alphabet spielt — kann am selben Tisch sitzen, denselben Kampf kämpfen, dieselbe Welt aufbauen.',
+          'Das ist keine Kleinigkeit. Das ist die Art von Gleichstellung, die breiter existieren sollte und es selten tut. Ich finde es wert, darauf hinzuarbeiten.',
+        ],
+      },
+      {
+        label: '// IN DER PRAXIS',
+        title: 'Was das in der Arbeit bedeutet',
+        body: [
+          'Beruflich beeinflusst es, wie ich über Barrierefreiheit, Internationaliserung und die in UX-Entscheidungen eingebetteten Annahmen nachdenke. Inklusiv als Standard, nicht als Nachgedanke.',
+          'Persönlich ist es einfach die Welt, in der ich leben möchte — eine, in der Menschen zusammenkommen, gemeinsam Dinge genießen und etwas Erstrebenswertes aufbauen können. Gemeinsam. Daran arbeite ich, auf welche Weise ich kann.',
+        ],
+      },
+    ],
+  },
+  augmented: {
+    pageLabel: '// KI-AUGMENTIERTER WORKFLOW',
+    title: 'Senior-Handwerk, multipliziert.',
+    intro: 'KI macht dich nicht zu einem besseren Entwickler. Gut mit KI zu arbeiten schon. Es gibt einen Unterschied — und er zeigt sich in der Qualität der Fragen, die du stellst, im Urteilsvermögen, das du auf die Antworten anwendest, und in den Entscheidungen, wann du dich darauf stützt und wann nicht. So nutze ich sie.',
+    sections: [
+      {
+        id: '01',
+        label: '// INTERNES TOOLING',
+        title: 'Die Werkzeuge hinter den Werkzeugen',
+        accent: 'amber' as const,
+        insight: 'KI hat die Kosten, es richtig zu machen, niedrig genug gemacht, um es zu rechtfertigen — das hat verändert, wie ich arbeite, nicht nur wie schnell.',
+        body: [
+          'ScrapWars läuft auf Hunderten vernetzter Items, Materialien, Crafting-Rezepte und wirtschaftlicher Abhängigkeiten. Diese Daten manuell zu verwalten — in Tabellenkalkulationen oder rohem JSON — würde Stunden verbrennen, die ins Bauen gehören. Also habe ich stattdessen ein Werkzeug gebaut.',
+          'Scrap Shop ist eine interne Dev-Website, mit KI-Unterstützung entwickelt: eine zweckgebundene Oberfläche zum Erstellen, Visualisieren, Bearbeiten und Verwalten von Spieldaten. Items, Materialstufen, Produktionsketten, Crafting-Bäume — alles editierbar in einer UI, die um das tatsächliche Datenmodell herum gebaut wurde, nicht um generische CRUD-Muster.',
+          'Ohne KI hätte ich das in dieser Phase eines Solo-Nebenprojekts nicht gebaut. Das Tooling hätte gewartet. KI hat die Kosten gesenkt, es ordentlich zu machen — und das hat die Qualität von allem, was folgt, verändert.',
+        ],
+      },
+      {
+        id: '02',
+        label: '// RESEARCH & DOMAIN-ERWEITERUNG',
+        title: 'Senior-Urteil, erweiterter Horizont',
+        accent: 'teal' as const,
+        insight: 'KI erweitert die Karte. Das Navigieren bleibt meine Aufgabe.',
+        body: [
+          'Game-Balancing ist eine eigene Disziplin. Dasselbe gilt für Wirtschaftssimulation, Material-Tier-Design und die Psychologie von Spielerprogression. Das ist nicht meine Kerndomäne — aber all das muss in einem so vernetzten System wie einer 4X-Ökonomie sorgfältig angewendet werden.',
+          'KI gibt mir schnellen Zugang zum etablierten Denken in diesen Bereichen: dokumentierte Ansätze, bekannte Fallstricke, Design-Patterns aus veröffentlichten Titeln. Ich behandle das nicht als Ersatz für Expertise. Ich behandle es als Weg, die Wissensaneignungsphase zu komprimieren — schneller an den Punkt zu kommen, wo ich intelligent bewerten kann.',
+          'Die Senior-Kompetenz hier ist nicht, alles zu wissen. Es ist zu wissen, wie man hinterfragt, was man findet, erkennt, wann ein Muster nicht auf den eigenen Kontext passt, und die Entscheidung trifft. Die Karte wird größer. Die Navigation wird nicht ausgelagert.',
+        ],
+      },
+      {
+        id: '03',
+        label: '// PROTOTYPE-TREUE',
+        title: 'Echte Daten, echtes Feedback, keine Verzögerungen',
+        accent: 'purple' as const,
+        insight: 'Repräsentative Placeholder-Inhalte decken echte Probleme früh auf — bevor Investitionen in die falsche Richtung fließen.',
+        body: [
+          'Prototypen mit offensichtlich gefakten Daten liefern offensichtlich gefaktes Feedback. Eine UI voller Placeholder-Itemnamen und unrealistischer Werte sagt nichts darüber aus, ob das Layout funktioniert, ob die Informationshierarchie stimmt oder ob das Datenmodell unter realistischer Last standhält.',
+          'Ich nutze KI, um Placeholder-Inhalte zu generieren, die nah genug an echten sind: Itemnamen und Beschreibungen, die zum Ton passen, Werte im richtigen Bereich, Produktionsketten, die strukturell plausibel sind. Die Inhalte werden ersetzt — das ist der Punkt — aber sie sind repräsentativ genug, um echte Designprobleme früh zu zeigen.',
+          'Dasselbe gilt für Layout-Arbeit mit KI-generierten Platzhalterbildern. Sie werden nicht deployed. Sie sind Scaffolding. Der Unterschied ist wichtig, und ihn zu kennen ist der Punkt.',
+        ],
+      },
+      {
+        id: '04',
+        label: '// RAPID IDEATION',
+        title: 'Die Disziplin des Schnellen',
+        accent: 'amber' as const,
+        insight: 'Nicht schneller auf die erste Idee zusteuern — bessere Ideen erreichen, bevor die Zeit abläuft.',
+        body: [
+          'Nicht jede Idee verdient produktionsreifen Code. Manche Dinge müssen ausprobiert werden, bevor sie Investitionen verdienen — und die Fähigkeit, eine grobe Implementierung aufzubauen, ehrlich zu bewerten und sie entweder zu verwerfen oder zu promoten, ist selbst eine architektonische Kompetenz.',
+          'KI macht die Explorationsphase schneller, ohne die Entscheidungsphase weniger rigoros zu machen. Eine neue Systemmechanik, ein UI-Interaktionsmuster, ein Datenfluss — ich kann es in einem Bruchteil der Zeit skizzieren, was bedeutet, dass ich mehr Optionen erkunde, bevor ich mich festlege. Der Wegwerfcode bleibt Wegwerfcode. Die Entscheidungen sind besser dafür.',
+          'So sieht KI-augmentierte Geschwindigkeit auf Senior-Level wirklich aus: nicht schneller auf die erste Idee zusteuern — bessere Ideen erreichen, bevor die Zeit abläuft.',
+        ],
+      },
+    ],
+    closing: 'Der gemeinsame Nenner all dessen sind nicht die Tools — sondern das Urteilsvermögen, wann und wie man sie einsetzt. Das ist die Kompetenz, die sich überträgt.',
+    closingLabel: '// DAS FAZIT',
   },
   projectsPage: {
     pageLabel: '// PROJEKTE',

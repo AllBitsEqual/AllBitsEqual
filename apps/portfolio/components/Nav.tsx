@@ -15,6 +15,7 @@ export function Nav() {
     { href: '/about', label: t('nav.about') },
     { href: '/experience', label: t('nav.experience') },
     { href: '/projects', label: t('nav.projects') },
+    { href: '/augmented', label: t('nav.augmented') },
   ]
 
   return (
