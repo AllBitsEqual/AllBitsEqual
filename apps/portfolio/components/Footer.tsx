@@ -18,7 +18,7 @@ export function Footer() {
           </div>
           <div className="flex items-center gap-4 font-mono text-xs">
             <a
-              href="https://github.com"
+              href="https://github.com/AllBitsEqual"
               target="_blank"
               rel="noopener noreferrer"
               className="text-text-muted hover:text-accent-teal transition-colors"
@@ -26,7 +26,7 @@ export function Footer() {
               {t('footer.github')}
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/konrad-abe"
               target="_blank"
               rel="noopener noreferrer"
               className="text-text-muted hover:text-accent-teal transition-colors"
@@ -34,7 +34,7 @@ export function Footer() {
               {t('footer.linkedin')}
             </a>
             <a
-              href="mailto:hello@allbitsequal.com"
+              href="mailto:info@allbitsequal.com"
               className="text-text-muted hover:text-accent-teal transition-colors"
             >
               {t('footer.email')}

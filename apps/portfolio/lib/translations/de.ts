@@ -398,14 +398,12 @@ const de = {
   pages: {
     about: {
       title: 'Über mich',
-      comingSoon: 'Kommt bald.',
     },
     experience: {
       title: 'Erfahrung',
     },
     projects: {
       title: 'Projekte',
-      comingSoon: 'Kommt bald.',
     },
     blog: {
       title: 'Blog',

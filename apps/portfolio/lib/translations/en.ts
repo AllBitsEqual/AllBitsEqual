@@ -398,14 +398,12 @@ const en = {
   pages: {
     about: {
       title: 'About',
-      comingSoon: 'Coming soon.',
     },
     experience: {
       title: 'Experience',
     },
     projects: {
       title: 'Projects',
-      comingSoon: 'Coming soon.',
     },
     blog: {
       title: 'Blog',
