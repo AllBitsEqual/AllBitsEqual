@@ -38,7 +38,11 @@ export function FeaturedProjects() {
         </div>
 
         {/* Projects grid */}
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className={`grid gap-6 ${
+          projects.length === 1 ? 'md:grid-cols-1 max-w-xl' :
+          projects.length === 2 ? 'md:grid-cols-2' :
+          'md:grid-cols-3'
+        }`}>
           {projects.map((project) => (
             <div
               key={project.id}

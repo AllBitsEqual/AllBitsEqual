@@ -35,17 +35,6 @@ export function Nav() {
 
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-6">
-          <Link
-            href="/"
-            aria-label="Home"
-            className={`transition-colors ${
-              pathname === '/' ? 'text-accent-amber' : 'text-text-muted hover:text-text-primary'
-            }`}
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
-            </svg>
-          </Link>
           {links.map((link) => (
             <Link
               key={link.href}
@@ -93,18 +82,6 @@ export function Nav() {
       {menuOpen && (
         <div className="border-t border-border bg-surface md:hidden">
           <div className="flex flex-col px-4 py-4 gap-4">
-            <Link
-              href="/"
-              onClick={() => setMenuOpen(false)}
-              className={`flex items-center gap-2 text-sm transition-colors ${
-                pathname === '/' ? 'text-accent-amber font-medium' : 'text-text-muted hover:text-text-primary'
-              }`}
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
-              </svg>
-              Home
-            </Link>
             {links.map((link) => (
               <Link
                 key={link.href}
