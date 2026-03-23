@@ -1,7 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
+// Instantiated inside the handler so it reads the env var at request time, not build time
+function getResend() {
+  return new Resend(process.env.RESEND_API_KEY)
+}
 
 const VALID_TOPICS = ['project', 'job', 'speaking', 'question', 'feedback', 'other'] as const
 type Topic = typeof VALID_TOPICS[number]
@@ -99,7 +102,7 @@ export async function POST(req: NextRequest) {
   const toAddress = process.env.CONTACT_TO_EMAIL ?? 'info@allbitsequal.com'
 
   try {
-    await resend.emails.send({
+    await getResend().emails.send({
       from: 'AllBitsEqual Contact Form <contact@allbitsequal.com>',
       to:   toAddress,
       replyTo: safeEmail || undefined,
