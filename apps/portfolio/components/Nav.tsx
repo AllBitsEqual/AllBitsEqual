@@ -17,6 +17,7 @@ export function Nav() {
     { href: '/experience', label: t('nav.experience') },
     { href: '/projects', label: t('nav.projects') },
     { href: '/augmented', label: t('nav.augmented') },
+    { href: '/contact', label: t('nav.contact') },
   ]
 
   return (
@@ -49,7 +50,7 @@ export function Nav() {
             </Link>
           ))}
           <Link
-            href="/experience"
+            href="/contact"
             className="clip-corners bg-accent-amber px-4 py-1.5 text-sm font-semibold text-background transition-opacity hover:opacity-90"
           >
             {t('nav.hire')}
@@ -97,7 +98,7 @@ export function Nav() {
               </Link>
             ))}
             <Link
-              href="/experience"
+              href="/contact"
               onClick={() => setMenuOpen(false)}
               className="clip-corners inline-block bg-accent-amber px-4 py-2 text-sm font-semibold text-background text-center"
             >
