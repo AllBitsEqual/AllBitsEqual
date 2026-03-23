@@ -12,7 +12,7 @@ const de = {
   hero: {
     label: 'SENIOR FRONT-END ARCHITECT',
     headline: 'Ich entwickle Apps, die in deiner Tasche leben, und Welten, die in deinem Kopf entstehen.',
-    body: 'Als Senior Front-End Architect & Full-Stack Developer mit über 20 Jahren Erfahrung liefere ich performante Anwendungen im React- und React-Native-Ökosystem — und verbinde zwei Jahrzehnte solider Engineering-Arbeit mit modernen, KI-gestützten Workflows. Durch konsequente Architekturstandards entstehen skalierbare, produktionsreife Codebases und reibungslose End-to-End-Deployments via Expo EAS. Ich baue Dinge mit Leidenschaft.',
+    body: 'Als Senior Front-End Architect mit über 20 Jahren Erfahrung im Web und tiefer Expertise in React und React Native liefere ich performante Anwendungen in diesen Ökosystemen — und verbinde zwei Jahrzehnte solider Engineering-Arbeit mit modernen, KI-gestützten Workflows. Durch konsequente Architekturstandards entstehen skalierbare, produktionsreife Codebases und reibungslose End-to-End-Deployments via Expo EAS. Ich baue Dinge mit Leidenschaft.',
     ctaProjects: 'Projekte ansehen',
     ctaCV: 'Lebenslauf herunterladen',
     stats: '20+ Jahre Erfahrung · 3 Zielplattformen · ∞ Zeilen Handwerk',
