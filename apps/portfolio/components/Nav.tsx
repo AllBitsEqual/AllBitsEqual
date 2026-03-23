@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useTranslation } from 'react-i18next'
 import { LanguageToggle } from './LanguageToggle'
+import Image from 'next/image'
 
 export function Nav() {
   const { t } = useTranslation('common')
@@ -24,9 +25,12 @@ export function Nav() {
         {/* Brand */}
         <Link
           href="/"
-          className="font-mono text-sm font-bold tracking-widest text-accent-amber hover:opacity-80 transition-opacity"
+          className="flex items-center gap-3 hover:opacity-80 transition-opacity"
         >
-          {t('nav.brand')}
+          <Image src="/logo-header.png" alt="AllBitsEqual Logo" width={36} height={36} className="rounded-sm" />
+          <span className="font-mono text-sm font-bold tracking-widest text-accent-amber mt-1">
+            {t('nav.brand')}
+          </span>
         </Link>
 
         {/* Desktop nav */}
