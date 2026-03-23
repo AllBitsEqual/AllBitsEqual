@@ -56,7 +56,8 @@ interface EducationItem {
 }
 
 export default function Experience() {
-  const { t } = useTranslation('common')
+  const { t, i18n } = useTranslation('common')
+  const isDE = i18n.language === 'de'
 
   const skillCategories = t('experience.skillCategories', { returnObjects: true }) as SkillCategory[]
   const positions = t('experience.positions', { returnObjects: true }) as Position[]
@@ -78,18 +79,11 @@ export default function Experience() {
             </h1>
             <div className="flex flex-wrap gap-4">
               <a
-                href="/cv/konrad-cv-en-2026.pdf"
+                href={isDE ? '/cv/konrad-cv-de-2026.pdf' : '/cv/konrad-cv-en-2026.pdf'}
                 download
                 className="clip-corners border border-accent-amber px-6 py-3 font-semibold text-accent-amber transition-colors hover:bg-accent-amber hover:text-background"
               >
-                {t('cv.downloadEN')}
-              </a>
-              <a
-                href="/cv/konrad-cv-de-2026.pdf"
-                download
-                className="clip-corners border border-accent-teal px-6 py-3 font-semibold text-accent-teal transition-colors hover:bg-accent-teal hover:text-background"
-              >
-                {t('cv.downloadDE')}
+                {isDE ? t('cv.downloadDE') : t('cv.downloadEN')}
               </a>
             </div>
           </div>

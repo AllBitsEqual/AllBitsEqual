@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { useTranslation } from 'react-i18next'
 
 export function Footer() {
@@ -16,7 +17,7 @@ export function Footer() {
             <span className="text-text-faint">·</span>
             <span>{t('footer.built')}</span>
           </div>
-          <div className="flex items-center gap-4 font-mono text-xs">
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 font-mono text-xs md:justify-end">
             <a
               href="https://github.com/AllBitsEqual"
               target="_blank"
@@ -39,6 +40,13 @@ export function Footer() {
             >
               {t('footer.email')}
             </a>
+            <span className="text-text-faint">·</span>
+            <Link href="/imprint" className="text-text-muted hover:text-accent-teal transition-colors">
+              {t('footer.imprint')}
+            </Link>
+            <Link href="/privacy" className="text-text-muted hover:text-accent-teal transition-colors">
+              {t('footer.privacy')}
+            </Link>
           </div>
         </div>
       </div>

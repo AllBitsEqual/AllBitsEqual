@@ -89,6 +89,8 @@ const en = {
     github: 'GitHub',
     linkedin: 'LinkedIn',
     email: 'Email',
+    imprint: 'Imprint',
+    privacy: 'Privacy',
   },
   cv: {
     downloadEN: 'Download CV (EN)',
