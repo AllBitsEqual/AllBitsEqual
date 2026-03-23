@@ -10,15 +10,15 @@ const de = {
     contact: 'Kontakt',
   },
   hero: {
-    label: 'SENIOR FRONT-END ARCHITEKT',
+    label: 'SENIOR FRONT-END ARCHITECT',
     headline: 'Ich entwickle Apps, die in deiner Tasche leben, und Welten, die in deinem Kopf entstehen.',
-    body: 'Als Senior Front-End Architekt & Full-Stack Entwickler mit über 20 Jahren Erfahrung liefere ich leistungsstarke Anwendungen im React- und React-Native-Ökosystem — und verbinde zwei Jahrzehnte solider Ingenieursarbeit mit modernen, KI-gestützten Workflows. Durch konsequente Architekturstandards entstehen skalierbare, produktionsreife Codebasen und reibungslose End-to-End-Deployments via Expo EAS. Ich baue Dinge mit Leidenschaft.',
+    body: 'Als Senior Front-End Architect & Full-Stack Developer mit über 20 Jahren Erfahrung liefere ich performante Anwendungen im React- und React-Native-Ökosystem — und verbinde zwei Jahrzehnte solider Engineering-Arbeit mit modernen, KI-gestützten Workflows. Durch konsequente Architekturstandards entstehen skalierbare, produktionsreife Codebases und reibungslose End-to-End-Deployments via Expo EAS. Ich baue Dinge mit Leidenschaft.',
     ctaProjects: 'Projekte ansehen',
     ctaCV: 'Lebenslauf herunterladen',
     stats: '20+ Jahre Erfahrung · 3 Zielplattformen · ∞ Zeilen Handwerk',
   },
   skills: {
-    label: '// TECHNOLOGIE-STACK',
+    label: '// TECH STACK',
     items: [
       'React Native',
       'Expo',
@@ -42,7 +42,7 @@ const de = {
         name: 'TopFit App',
         tags: ['Betriebliches Gesundheitsmanagement', 'Mobile', 'iOS & Android'],
         description:
-          'Seit 3 Jahren entwickelt und kontinuierlich verbessert für den Kunden TopFit GmbH — eine digitale BGM-Plattform, die Mitarbeitenden hilft, gesündere Gewohnheiten im Arbeitsalltag zu etablieren. Inhalte zu Ernährung, Schlaf und aktiven Pausen sowie Kommunikationswerkzeuge für Artikel, Videos und Eventbuchungen.',
+          'Seit 3 Jahren entwickelt und kontinuierlich verbessert für TopFit GmbH — eine digitale BGM-Plattform, die Mitarbeitenden hilft, gesündere Gewohnheiten im Arbeitsalltag zu etablieren. Inhalte zu Ernährung, Schlaf und aktiven Pausen sowie Kommunikationstools für Artikel, Videos und Eventbuchungen.',
         links: {
           appStore: 'https://apps.apple.com/de/app/topfit-app/id1612613416',
           googlePlay: 'https://play.google.com/store/apps/details?id=app.topfit',
@@ -86,7 +86,7 @@ const de = {
     },
   },
   footer: {
-    built: 'Erstellt mit Next.js & Expo',
+    built: 'Gebaut mit Next.js & Expo',
     github: 'GitHub',
     linkedin: 'LinkedIn',
     email: 'E-Mail',
@@ -99,7 +99,7 @@ const de = {
   about: {
     pageLabel: '// ÜBER MICH',
     title: 'Konrad Abe',
-    subtitle: 'Senior Front-End Architekt · Berlin',
+    subtitle: 'Senior Front-End Architect · Berlin',
     intro: 'Ich baue seit zwanzig Jahren Dinge im Web — und die Arbeit war immer zweitrangig gegenüber einer einfacheren Frage: Wer darf das nutzen, was wir bauen, und zu welchen Bedingungen?',
     sections: [
       {
@@ -123,26 +123,26 @@ const de = {
         label: '// IN DER PRAXIS',
         title: 'Was das in der Arbeit bedeutet',
         body: [
-          'Beruflich beeinflusst es, wie ich über Barrierefreiheit, Internationaliserung und die in UX-Entscheidungen eingebetteten Annahmen nachdenke. Inklusiv als Standard, nicht als Nachgedanke.',
+          'Beruflich beeinflusst es, wie ich über Barrierefreiheit, Internationalisierung und die in UX-Entscheidungen eingebetteten Annahmen nachdenke. Inklusion als Standard, nicht als Nachgedanke.',
           'Persönlich ist es einfach die Welt, in der ich leben möchte — eine, in der Menschen zusammenkommen, gemeinsam Dinge genießen und etwas Erstrebenswertes aufbauen können. Gemeinsam. Daran arbeite ich, auf welche Weise ich kann.',
         ],
       },
     ],
   },
   augmented: {
-    pageLabel: '// KI-AUGMENTIERTER WORKFLOW',
+    pageLabel: '// AUGMENTED WORKFLOW',
     title: 'Senior-Handwerk, multipliziert.',
-    intro: 'KI macht dich nicht zu einem besseren Entwickler. Gut mit KI zu arbeiten schon. Es gibt einen Unterschied — und er zeigt sich in der Qualität der Fragen, die du stellst, im Urteilsvermögen, das du auf die Antworten anwendest, und in den Entscheidungen, wann du dich darauf stützt und wann nicht. So nutze ich sie.',
+    intro: 'KI macht dich nicht zu einem besseren Developer. Gut mit KI zu arbeiten schon. Es gibt einen Unterschied — und er zeigt sich in der Qualität der Fragen, die du stellst, im Urteilsvermögen, das du auf die Antworten anwendest, und in den Entscheidungen, wann du dich darauf stützt und wann nicht. So nutze ich sie.',
     sections: [
       {
         id: '01',
         label: '// INTERNES TOOLING',
-        title: 'Die Werkzeuge hinter den Werkzeugen',
+        title: 'Die Tools hinter den Tools',
         accent: 'amber' as const,
         insight: 'KI hat die Kosten, es richtig zu machen, niedrig genug gemacht, um es zu rechtfertigen — das hat verändert, wie ich arbeite, nicht nur wie schnell.',
         body: [
-          'ScrapWars läuft auf Hunderten vernetzter Items, Materialien, Crafting-Rezepte und wirtschaftlicher Abhängigkeiten. Diese Daten manuell zu verwalten — in Tabellenkalkulationen oder rohem JSON — würde Stunden verbrennen, die ins Bauen gehören. Also habe ich stattdessen ein Werkzeug gebaut.',
-          'Scrap Shop ist eine interne Dev-Website, mit KI-Unterstützung entwickelt: eine zweckgebundene Oberfläche zum Erstellen, Visualisieren, Bearbeiten und Verwalten von Spieldaten. Items, Materialstufen, Produktionsketten, Crafting-Bäume — alles editierbar in einer UI, die um das tatsächliche Datenmodell herum gebaut wurde, nicht um generische CRUD-Muster.',
+          'ScrapWars läuft auf Hunderten vernetzter Items, Materialien, Crafting-Rezepte und wirtschaftlicher Abhängigkeiten. Diese Daten manuell zu verwalten — in Tabellenkalkulationen oder rohem JSON — würde Stunden verbrennen, die ins Bauen gehören. Also habe ich stattdessen ein Tool gebaut.',
+          'Scrap Shop ist eine interne Dev-Website, mit KI-Unterstützung entwickelt: ein dediziertes Interface zum Erstellen, Visualisieren, Bearbeiten und Verwalten von Spieldaten. Items, Materialstufen, Produktionsketten, Crafting-Bäume — alles editierbar in einer UI, die um das tatsächliche Datenmodell herum gebaut wurde, nicht um generische CRUD-Patterns.',
           'Ohne KI hätte ich das in dieser Phase eines Solo-Nebenprojekts nicht gebaut. Das Tooling hätte gewartet. KI hat die Kosten gesenkt, es ordentlich zu machen — und das hat die Qualität von allem, was folgt, verändert.',
         ],
       },
@@ -154,13 +154,13 @@ const de = {
         insight: 'KI erweitert die Karte. Das Navigieren bleibt meine Aufgabe.',
         body: [
           'Game-Balancing ist eine eigene Disziplin. Dasselbe gilt für Wirtschaftssimulation, Material-Tier-Design und die Psychologie von Spielerprogression. Das ist nicht meine Kerndomäne — aber all das muss in einem so vernetzten System wie einer 4X-Ökonomie sorgfältig angewendet werden.',
-          'KI gibt mir schnellen Zugang zum etablierten Denken in diesen Bereichen: dokumentierte Ansätze, bekannte Fallstricke, Design-Patterns aus veröffentlichten Titeln. Ich behandle das nicht als Ersatz für Expertise. Ich behandle es als Weg, die Wissensaneignungsphase zu komprimieren — schneller an den Punkt zu kommen, wo ich intelligent bewerten kann.',
-          'Die Senior-Kompetenz hier ist nicht, alles zu wissen. Es ist zu wissen, wie man hinterfragt, was man findet, erkennt, wann ein Muster nicht auf den eigenen Kontext passt, und die Entscheidung trifft. Die Karte wird größer. Die Navigation wird nicht ausgelagert.',
+          'KI gibt mir schnellen Zugang zum etablierten Denken in diesen Bereichen: dokumentierte Ansätze, bekannte Fallstricke, Design-Patterns aus veröffentlichten Titeln. Ich behandle das nicht als Ersatz für Expertise. Ich behandle es als Weg, die Lernkurve zu verkürzen — schneller an den Punkt zu kommen, an dem ich fundiert urteilen kann.',
+          'Die Senior-Kompetenz hier ist nicht, alles zu wissen. Es ist zu wissen, wie man hinterfragt, was man findet, erkennt, wann ein Pattern nicht auf den eigenen Kontext passt, und die Entscheidung trifft. Die Karte wird größer. Die Navigation wird nicht ausgelagert.',
         ],
       },
       {
         id: '03',
-        label: '// PROTOTYPE-TREUE',
+        label: '// PROTOTYPE FIDELITY',
         title: 'Echte Daten, echtes Feedback, keine Verzögerungen',
         accent: 'purple' as const,
         insight: 'Repräsentative Placeholder-Inhalte decken echte Probleme früh auf — bevor Investitionen in die falsche Richtung fließen.',
@@ -178,7 +178,7 @@ const de = {
         insight: 'Nicht schneller auf die erste Idee zusteuern — bessere Ideen erreichen, bevor die Zeit abläuft.',
         body: [
           'Nicht jede Idee verdient produktionsreifen Code. Manche Dinge müssen ausprobiert werden, bevor sie Investitionen verdienen — und die Fähigkeit, eine grobe Implementierung aufzubauen, ehrlich zu bewerten und sie entweder zu verwerfen oder zu promoten, ist selbst eine architektonische Kompetenz.',
-          'KI macht die Explorationsphase schneller, ohne die Entscheidungsphase weniger rigoros zu machen. Eine neue Systemmechanik, ein UI-Interaktionsmuster, ein Datenfluss — ich kann es in einem Bruchteil der Zeit skizzieren, was bedeutet, dass ich mehr Optionen erkunde, bevor ich mich festlege. Der Wegwerfcode bleibt Wegwerfcode. Die Entscheidungen sind besser dafür.',
+          'KI macht die Explorationsphase schneller, ohne die Entscheidungsphase weniger rigoros zu machen. Eine neue Systemmechanik, ein UI-Interaktionspattern, ein Datenfluss — ich kann es in einem Bruchteil der Zeit skizzieren, was bedeutet, dass ich mehr Optionen erkunde, bevor ich mich festlege. Der Wegwerfcode bleibt Wegwerfcode. Die Entscheidungen sind besser dafür.',
           'So sieht KI-augmentierte Geschwindigkeit auf Senior-Level wirklich aus: nicht schneller auf die erste Idee zusteuern — bessere Ideen erreichen, bevor die Zeit abläuft.',
         ],
       },
@@ -198,7 +198,7 @@ const de = {
         period: '2022 – 2026',
         partners: ['TopFit GmbH (REWE Group)'],
         title: 'Gesündere Gewohnheiten, in großem Maßstab',
-        teaser: 'Drei Jahre kontinuierliche Entwicklung an einer digitalen BGM-Plattform für TopFit GmbH — Teil der REWE Group. Eine React-Native-App, die Mitarbeitenden in großen Unternehmen hilft, gesündere Routinen aufzubauen: durch kuratierte Inhalte, Habit-Tracking und unternehmensweite Kommunikationswerkzeuge. End-to-end umgesetzt: Architektur, Implementierung und Expo-EAS-Deployment.',
+        teaser: 'Drei Jahre kontinuierliche Entwicklung an einer digitalen BGM-Plattform für TopFit GmbH — Teil der REWE Group. Eine React-Native-App, die Mitarbeitenden in großen Unternehmen hilft, gesündere Routinen aufzubauen: durch kuratierte Inhalte, Habit-Tracking und unternehmensweite Kommunikationstools. End-to-end umgesetzt: Architektur, Implementierung und Expo-EAS-Deployment.',
         accent: 'purple' as const,
         visible: true,
       },
@@ -215,7 +215,7 @@ const de = {
       },
       {
         id: '03',
-        field: 'Automobil & B2B Intranet',
+        field: 'Automotive & B2B Intranet',
         company: 'Das Büro am Draht GmbH',
         period: '2018 – 2022',
         partners: ['Audi', 'Volkswagen'],
@@ -231,7 +231,7 @@ const de = {
         period: '2015 – 2018',
         partners: ['Liebherr', 'WACKER'],
         title: 'Wo Ingenieurskunst auf das Web trifft',
-        teaser: 'Leitung des Front-End-Teams bei der Umsetzung responsiver digitaler Auftritte für namhafte Industriekunden — darunter Kran- und Baumaschinenhersteller Liebherr und den globalen Bauchemiehersteller WACKER. Präzision, Skalierung und internationale Reichweite.',
+        teaser: 'Leitung des Frontend-Teams bei der Umsetzung responsiver digitaler Auftritte für namhafte Industriekunden — darunter Kran- und Baumaschinenhersteller Liebherr und den globalen Bauchemiehersteller WACKER. Präzision, Skalierung und internationale Reichweite.',
         accent: 'purple' as const,
         visible: true,
       },
@@ -242,7 +242,7 @@ const de = {
         period: '2013 – 2015',
         partners: [],
         title: 'Einkaufen auf Knopfdruck',
-        teaser: 'Technische Leitung der Mobile-Web-Entwicklung und eines vollständigen Responsive-Shop-Redesigns bei einem der größten deutschen Consumer-Electronics-Händler — Frontend-Standards für eine hochfrequentierte Commerce-Plattform mitten im Smartphone-Boom gesetzt.',
+        teaser: 'Technische Leitung der Mobile-Web-Entwicklung und eines vollständigen responsiven Shop-Redesigns bei einem der größten deutschen Consumer-Electronics-Händler — Frontend-Standards für eine hochfrequentierte Commerce-Plattform mitten im Smartphone-Boom gesetzt.',
         accent: 'teal' as const,
         visible: true,
       },
@@ -253,7 +253,7 @@ const de = {
         period: '2011 – 2012',
         partners: ['die Welt online — Börse'],
         title: 'Den Markt lesbar machen',
-        teaser: 'Echtzeit-Börsenvisualisierungen und interaktive Finanz-Dashboards für eines der meistgelesenen deutschen Nachrichtenportale — Live-Kursdaten in klare, schnelle, zugängliche UI übersetzt, zu einer Zeit, als das Web gerade erst laufen lernte.',
+        teaser: 'Echtzeit-Börsenvisualisierungen und interaktive Finance-Dashboards für eines der meistgelesenen deutschen Nachrichtenportale — Live-Kursdaten in klare, schnelle, zugängliche UI übersetzt, zu einer Zeit, als das Web gerade erst laufen lernte.',
         accent: 'amber' as const,
         visible: true,
       },
@@ -272,7 +272,7 @@ const de = {
   },
   experience: {
     pageLabel: '// ERFAHRUNG & LEBENSLAUF',
-    skillsLabel: '// WISSEN & SKILLS',
+    skillsLabel: '// SKILLS & EXPERTISE',
     timelineLabel: '// BERUFLICHE ERFAHRUNG',
     educationLabel: '// AUSBILDUNG',
     priorLabel: 'Ausgewählte frühere Erfahrung (2002–2012)',
@@ -289,17 +289,17 @@ const de = {
         ],
       },
       {
-        title: 'Tooling & Qualitätssicherung',
+        title: 'Tooling & QA',
         accent: 'teal' as const,
         groups: [
           { name: 'Build & Environment', items: ['Vite', 'Webpack', 'NPM/PNPM', 'CI/CD (GitHub Actions)'] },
           { name: 'Testing', items: ['Cypress', 'Jest', 'Playwright', 'Browserstack'] },
           { name: 'Design & UX', items: ['Figma', 'Usability Engineering', 'Performance Optimisation'] },
-          { name: 'Projektmanagement', items: ['Agile/Scrum', 'Linear', 'Jira', 'ClickUp', 'Technische Leitung & Mentoring'] },
+          { name: 'Projektmanagement', items: ['Agile/Scrum', 'Linear', 'Jira', 'ClickUp', 'Tech Lead & Mentoring'] },
         ],
       },
       {
-        title: 'Legacy & Sekundäre Grundlagen',
+        title: 'Legacy & Weitere Grundlagen',
         accent: 'purple' as const,
         groups: [
           { name: 'Backend & CMS', items: ['Node.js', 'PHP', 'WordPress', 'MySQL/PostgreSQL'] },
@@ -314,10 +314,10 @@ const de = {
         role: 'Freelance Author & Web Developer',
         current: true,
         bullets: [
-          'Entwicklung und Bereitstellung vollständiger React-Native-Anwendungen und -Spiele für iOS und Android.',
-          'KI-gestützte Entwicklungszyklen, um hochperformante Lösungen für komplexe Kundenanforderungen zu liefern mit gleichzeitiger Senior-Level-Qualitätssicherung.',
-          'Verwaltung des gesamten Bereitstellungs- und Lebenszyklus mithilfe von Expo EAS für automatisierte Builds und optimierte Store-Einreichungen.',
-          'Veröffentlichen technischer Tutorials und Pflege von Open-Source-Projekten mit Schwerpunkt auf React, Redux und modernen JavaScript-Standards.',
+          'Entwicklung und Deployment vollständiger React-Native-Anwendungen und -Spiele für iOS und Android.',
+          'KI-gestützte Entwicklungszyklen, um performante Lösungen für komplexe Anforderungen zu liefern — mit konsequenter Senior-Level-Qualitätssicherung.',
+          'Management des vollständigen Deployment- und Release-Zyklus über Expo EAS — automatisierte Builds, optimierte Store-Submissions.',
+          'Veröffentlichung technischer Tutorials und Pflege von Open-Source-Projekten mit Fokus auf React, Redux und modernen JavaScript-Standards.',
         ],
       },
       {
@@ -336,7 +336,7 @@ const de = {
         current: false,
         bullets: [
           'In-house-Entwicklung einer React-Native-Plattform für Social Sharing und Wohltätigkeitsinitiativen — mit GoodNews als Inhaltsquelle und BetterPlace als Datenschicht für Spendenflows.',
-          'Integrierte Tools zur Organisation gemeinnütziger Initiativen mit React Native, TypeScript und Webpack.',
+          'Integration von Tools zur Organisation gemeinnütziger Initiativen mit React Native, TypeScript und Webpack.',
         ],
       },
       {
@@ -346,7 +346,7 @@ const de = {
         current: false,
         bullets: [
           'Entwicklung interaktiver Weboberflächen für Internet- und Intranet-Anwendungen von Audi und Volkswagen.',
-          'Technische Leitung einer internen Arbeitsgruppe für Frontend-Entwicklung; Durchführung von Schulungen zu JavaScript, React und Redux.',
+          'Tech Lead einer internen Frontend-Arbeitsgruppe; Schulungen zu JavaScript, React und Redux.',
         ],
       },
       {
@@ -355,7 +355,7 @@ const de = {
         role: 'Front-End Web Developer',
         current: false,
         bullets: [
-          'Technische Leitung des Front-End-Teams, verantwortlich für die Bereitstellung responsiver Websites für verschiedene Kunden.',
+          'Tech Lead des Frontend-Teams, verantwortlich für Entwicklung und Deployment responsiver Websites für verschiedene Kunden.',
         ],
       },
       {
@@ -364,7 +364,7 @@ const de = {
         role: 'Front-End Web Developer',
         current: false,
         bullets: [
-          'Technische Leitung der Entwicklung mobiler Web-Apps und des responsive Shops-Redesigns.',
+          'Technische Leitung der Entwicklung mobiler Web-Apps und des responsiven Shop-Redesigns.',
         ],
       },
     ],
@@ -404,7 +404,7 @@ const de = {
     sending: 'Wird gesendet…',
     successTitle: 'Nachricht gesendet.',
     successBody: 'Danke für deine Nachricht. Ich melde mich so bald wie möglich.',
-    errorGeneric: 'Etwas ist schiefgelaufen. Bitte versuche es später erneut.',
+    errorGeneric: 'Etwas ist schiefgelaufen. Bitte versuch es später noch einmal.',
     fields: {
       topic: 'Thema',
       topicPlaceholder: 'Thema auswählen…',
@@ -421,7 +421,7 @@ const de = {
     topics: {
       project: 'Projektanfrage',
       job: 'Jobangebot',
-      speaking: 'Vortrag / Veranstaltungseinladung',
+      speaking: 'Speaking / Eventeinladung',
       question: 'Technische Frage',
       feedback: 'Allgemeines Feedback',
       other: 'Sonstiges',
