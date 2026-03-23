@@ -83,7 +83,7 @@ export default function Experience() {
                 download
                 className="clip-corners border border-accent-amber px-6 py-3 font-semibold text-accent-amber transition-colors hover:bg-accent-amber hover:text-background"
               >
-                {isDE ? t('cv.downloadDE') : t('cv.downloadEN')}
+                {t('cv.download')}
               </a>
             </div>
           </div>

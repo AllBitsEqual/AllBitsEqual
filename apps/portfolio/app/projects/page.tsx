@@ -36,7 +36,7 @@ interface ProjectItem {
   field: string
   company: string
   period: string
-  clients: string[]
+  partners: string[]
   title: string
   teaser: string
   accent: 'amber' | 'teal' | 'purple'
@@ -131,15 +131,15 @@ export default function Projects() {
                           {item.company}
                         </span>
                       </div>
-                      {item.clients.length > 0 && (
+                      {item.partners.length > 0 && (
                         <div className="flex flex-wrap items-center gap-2">
-                          <span className="font-mono text-xs text-text-faint">// clients</span>
-                          {item.clients.map((client) => (
+                          <span className="font-mono text-xs text-text-faint">// partners</span>
+                          {item.partners.map((partner) => (
                             <span
-                              key={client}
+                              key={partner}
                               className="border border-border px-2 py-0.5 font-mono text-xs text-text-muted"
                             >
-                              {client}
+                              {partner}
                             </span>
                           ))}
                         </div>
