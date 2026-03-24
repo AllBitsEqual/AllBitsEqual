@@ -29,7 +29,7 @@ export default function Icon() {
             flexDirection: 'row',
             alignItems: 'center',
             justifyContent: 'center',
-            marginBottom: 35,
+            marginBottom: 85,
           }}
         >
           {/* Left Bracket */}
@@ -48,7 +48,7 @@ export default function Icon() {
               fontSize: 150,
               fontWeight: 900,
               lineHeight: 0.75,
-              marginTop: 40,
+              marginTop: 75,
             }}
           >
             <span>A</span>
