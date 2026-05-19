@@ -56,11 +56,26 @@ export async function POST(req: NextRequest) {
   const raw = body as Record<string, unknown>
 
   // Extract and coerce to strings
-  const topic   = typeof raw.topic   === 'string' ? raw.topic.trim()   : ''
-  const name    = typeof raw.name    === 'string' ? raw.name.trim()    : ''
-  const email   = typeof raw.email   === 'string' ? raw.email.trim()   : ''
-  const subject = typeof raw.subject === 'string' ? raw.subject.trim() : ''
-  const message = typeof raw.message === 'string' ? raw.message.trim() : ''
+  const topic         = typeof raw.topic         === 'string' ? raw.topic.trim()         : ''
+  const name          = typeof raw.name          === 'string' ? raw.name.trim()          : ''
+  const email         = typeof raw.email         === 'string' ? raw.email.trim()         : ''
+  const subject       = typeof raw.subject       === 'string' ? raw.subject.trim()       : ''
+  const message       = typeof raw.message       === 'string' ? raw.message.trim()       : ''
+  const website       = typeof raw.website       === 'string' ? raw.website.trim()       : ''
+  const captchaAnswer = typeof raw.captchaAnswer === 'string' ? raw.captchaAnswer.trim() : ''
+
+  // Honeypot — bots fill hidden fields, humans don't; return 200 silently so bots don't retry
+  if (website) {
+    return NextResponse.json({ success: true }, { status: 200 })
+  }
+
+  // Captcha check
+  if (captchaAnswer !== 'all') {
+    return NextResponse.json(
+      { errors: { captchaAnswer: 'Incorrect answer — give it another try.' } },
+      { status: 422 },
+    )
+  }
 
   // Validate topic (allowlist — reject anything unexpected)
   if (!VALID_TOPICS.includes(topic as Topic)) {

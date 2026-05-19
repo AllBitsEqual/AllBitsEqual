@@ -418,6 +418,15 @@ const de = {
       message: 'Nachricht',
       messagePlaceholder: 'Erzähl mir mehr…',
     },
+    captcha: {
+      label: 'Kurzer Menschlichkeitscheck',
+      question: 'Wie viele Bits sind gleich?',
+      optionNone: 'Keines',
+      optionFortyTwo: '42',
+      optionAll: 'Alle',
+      optionJustOne: 'Nur eines',
+      error: 'Schau dich um — die Antwort liegt direkt vor dir.',
+    },
     topics: {
       project: 'Projektanfrage',
       job: 'Jobangebot',

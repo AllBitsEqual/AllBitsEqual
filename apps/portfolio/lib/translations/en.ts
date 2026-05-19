@@ -418,6 +418,15 @@ const en = {
       message: 'Message',
       messagePlaceholder: 'Tell me more…',
     },
+    captcha: {
+      label: 'Quick Humanity Check',
+      question: 'How many bits are equal?',
+      optionNone: 'None',
+      optionFortyTwo: '42',
+      optionAll: 'All',
+      optionJustOne: 'Just one',
+      error: 'Look around — the answer is right in front of you.',
+    },
     topics: {
       project: 'Project Inquiry',
       job: 'Job Opportunity',

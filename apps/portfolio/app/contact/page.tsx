@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Nav } from '@/components/Nav'
 import { Footer } from '@/components/Footer'
@@ -15,14 +15,16 @@ type FormState = {
   email: string
   subject: string
   message: string
+  captchaAnswer: string
 }
 
 type FieldErrors = Partial<Record<keyof FormState, string>>
 
-const INITIAL: FormState = { topic: '', name: '', email: '', subject: '', message: '' }
+const INITIAL: FormState = { topic: '', name: '', email: '', subject: '', message: '', captchaAnswer: '' }
 
 export default function Contact() {
   const { t } = useTranslation('common')
+  const honeypotRef = useRef<HTMLInputElement>(null)
   const [form, setForm] = useState<FormState>(INITIAL)
   const [fieldErrors, setFieldErrors] = useState<FieldErrors>({})
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle')
@@ -46,7 +48,7 @@ export default function Contact() {
     const res = await fetch('/api/contact', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(form),
+      body: JSON.stringify({ ...form, website: honeypotRef.current?.value ?? '' }),
     })
 
     const data = await res.json()
@@ -99,6 +101,18 @@ export default function Contact() {
         <p className="mb-12 text-sm leading-relaxed text-text-muted">{t('contact.subtitle')}</p>
 
         <form onSubmit={handleSubmit} noValidate className="space-y-6">
+          {/* Honeypot — hidden from humans via CSS, filled by bots */}
+          <div aria-hidden="true" className="absolute left-[-9999px] top-0 h-0 w-0 overflow-hidden">
+            <label htmlFor="website">Website</label>
+            <input
+              ref={honeypotRef}
+              id="website"
+              type="text"
+              name="website"
+              tabIndex={-1}
+              autoComplete="off"
+            />
+          </div>
 
           {/* Topic */}
           <div>
@@ -192,6 +206,39 @@ export default function Contact() {
               {form.message.length} / 3000
             </p>
             {fieldErrors.message && <p className="mt-1 font-mono text-xs text-red-400">{fieldErrors.message}</p>}
+          </div>
+
+          {/* Captcha */}
+          <div>
+            <label className="mb-1 block font-mono text-xs tracking-widest text-text-primary uppercase">
+              {t('contact.captcha.label')} <span className="text-accent-amber">*</span>
+            </label>
+            <p className="mb-3 text-sm text-text-muted">{t('contact.captcha.question')}</p>
+            <div className="space-y-2">
+              {([
+                { value: 'none',    label: t('contact.captcha.optionNone') },
+                { value: '42',      label: t('contact.captcha.optionFortyTwo') },
+                { value: 'all',     label: t('contact.captcha.optionAll') },
+                { value: 'justone', label: t('contact.captcha.optionJustOne') },
+              ] as const).map(({ value, label }) => (
+                <label key={value} className="flex cursor-pointer items-center gap-3 group">
+                  <input
+                    type="radio"
+                    name="captcha"
+                    value={value}
+                    checked={form.captchaAnswer === value}
+                    onChange={() => set('captchaAnswer', value)}
+                    className="cursor-pointer accent-teal-400"
+                  />
+                  <span className="font-mono text-sm text-text-muted transition-colors group-hover:text-text-primary">
+                    {label}
+                  </span>
+                </label>
+              ))}
+            </div>
+            {fieldErrors.captchaAnswer && (
+              <p className="mt-2 font-mono text-xs text-red-400">{fieldErrors.captchaAnswer}</p>
+            )}
           </div>
 
           {serverError && (
