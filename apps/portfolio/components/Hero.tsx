@@ -50,7 +50,7 @@ export function Hero() {
             {t('hero.ctaProjects')}
           </Link>
           <a
-            href={`/cv/konrad-cv-${lang === 'de' ? 'de' : 'en'}-2026.pdf`}
+            href={`/cv/CV_Konrad-Abe_${lang === 'de' ? 'de' : 'en'}_2026.pdf`}
             download
             className="clip-corners border border-accent-teal px-6 py-3 font-semibold text-accent-teal transition-colors hover:bg-accent-teal hover:text-background"
           >
