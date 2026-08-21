@@ -17,7 +17,6 @@ export function Nav() {
     { href: '/experience', label: t('nav.experience') },
     { href: '/projects', label: t('nav.projects') },
     { href: '/augmented', label: t('nav.augmented') },
-    { href: '/contact', label: t('nav.contact') },
   ]
 
   return (
@@ -49,12 +48,12 @@ export function Nav() {
               {link.label}
             </Link>
           ))}
-          <Link
-            href="/contact"
+          <a
+            href="mailto:info@allbitsequal.com"
             className="clip-corners bg-accent-amber px-4 py-1.5 text-sm font-semibold text-background transition-opacity hover:opacity-90"
           >
             {t('nav.hire')}
-          </Link>
+          </a>
           <LanguageToggle />
         </div>
 
@@ -97,13 +96,13 @@ export function Nav() {
                 {link.label}
               </Link>
             ))}
-            <Link
-              href="/contact"
+            <a
+              href="mailto:info@allbitsequal.com"
               onClick={() => setMenuOpen(false)}
               className="clip-corners inline-block bg-accent-amber px-4 py-2 text-sm font-semibold text-background text-center"
             >
               {t('nav.hire')}
-            </Link>
+            </a>
           </div>
         </div>
       )}
