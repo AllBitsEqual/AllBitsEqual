@@ -79,7 +79,7 @@ export default function Experience() {
             </h1>
             <div className="flex flex-wrap gap-4">
               <a
-                href={isDE ? '/cv/CV_Konrad-Abe_de_2026.pdf' : '/cv/CV_Konrad-Abe_en_2026.pdf'}
+                href={isDE ? '/cv/CV_Konrad-Abe_de_2026-10.pdf' : '/cv/CV_Konrad-Abe_en_2026-10.pdf'}
                 download
                 className="clip-corners border border-accent-amber px-6 py-3 font-semibold text-accent-amber transition-colors hover:bg-accent-amber hover:text-background"
               >
